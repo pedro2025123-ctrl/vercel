@@ -1,19 +1,405 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aprenda Robótica - O Básico</title>
+    <style>
+        /* Estilos CSS para o site */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef4f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #007bff; /* Azul vibrante */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffc107; /* Amarelo para hover */
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-left: 5px solid #007bff;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        .component-list li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    <center>
-        <h1>site vercel</h1>
-    </center>
-    <h2>pedro aluno</h2>
 
-    
+    <header>
+        <h1>Guia de Robótica para Iniciantes</h1>
+        <p>Descubra o mundo da automação e programação!</p>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#componentes">Componentes Chave</a></li>
+                <li><a href="#projetos">Projetos Iniciais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <section id="introducao">
+            <h2>✨ O Que é Robótica?</h2>
+            <p>Robótica é a área da engenharia e ciência que lida com o projeto, construção, operação e aplicação de **robôs**. O objetivo principal é criar máquinas que possam auxiliar ou substituir humanos em tarefas perigosas, repetitivas ou complexas.</p>
+            <p>Os três pilares de qualquer robô são: **Sensoriamento** (perceber o mundo), **Processamento** (tomar decisões) e **Atuação** (executar ações).</p>
+        </section>
+
+        <section id="componentes">
+            <h2>🧠 Componentes Chave de um Robô</h2>
+            <p>Para construir seu primeiro robô, você precisará entender estas peças fundamentais:</p>
+            <ul class="component-list">
+                <li>
+                    <strong>Microcontrolador (o "Cérebro"):</strong> Dispositivos como **Arduino** ou **Raspberry Pi** que executam o código (o programa) que você escreve. Eles processam dados e tomam decisões.
+                </li>
+                <li>
+                    <strong>Sensores (os "Sentidos"):</strong> Permitem que o robô interaja com o ambiente. Exemplos: sensores de distância (ultrassom), sensores de luz e sensores de temperatura.
+                </li>
+                <li>
+                    <strong>Atuadores (os "Músculos"):</strong> Convertem energia em movimento para realizar tarefas. Os mais comuns são os **Motores DC** (corrente contínua) e **Servomotores**.
+                </li>
+                <li>
+                    <strong>Estrutura (o "Corpo"):</strong> O chassi ou a carcaça que suporta todos os outros componentes.
+                </li>
+            </ul>
+        </section>
+
+        <section id="projetos">
+            <h2>🚀 Projetos Iniciais Recomendados</h2>
+            <p>Começar com projetos simples é a melhor maneira de aprender:</p>
+            <ol>
+                <li>
+                    <strong>LED Piscante (Blink):</strong> O "Hello World" da robótica. Aprenda a programar o microcontrolador para ligar e desligar um LED em intervalos.
+                </li>
+                <li>
+                    <strong>Carro Seguidor de Linha:</strong> Construa um robô que usa sensores para seguir uma linha escura no chão. Ótimo para entender Sensores e Atuadores.
+                </li>
+                <li>
+                    <strong>Sensor de Distância:</strong> Crie um programa que mede a distância de um objeto usando o sensor ultrassônico e exibe o resultado em um monitor serial.
+                </li>
+            </ol>
+            <p>Lembre-se: Prática leva à perfeição! Comece com o **Arduino Uno** por ser robusto e ter muita documentação online.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Aprenda Robótica. Codifique o Futuro!</p>
+    </footer>
+
 </body>
-
 </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Azul</title>
+    <style>
+        /* O bloco <style> é onde o CSS é definido */
+        body {
+            /* Define a cor de fundo de toda a página */
+            background-color: #E6F0FF; /* Um azul claro suave */
+            
+            /* Define a cor padrão do texto no corpo */
+            color: #0044CC; /* Um azul escuro para o texto */
+            
+            /* Ajustes de fonte para melhor visualização */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            /* Define o texto do cabeçalho como um azul mais vibrante */
+            color: #1F618D;
+            border-bottom: 2px solid #1F618D;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>S</h1>
+    <p>
+
+    <div>
+        <p>Você pode mudar os códigos hexadecimais (como <code>#E6F0FF</code>) para escolher o tom de azul exato que você deseja!</p>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Futurista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        /* Variáveis CSS para cores - fácil de mudar! */
+        :root {
+            --cor-fundo: #1a1a2e; /* Azul/Roxo muito escuro */
+            --cor-texto-principal: #e0e0e0; /* Cinza claro */
+            --cor-destaque-primaria: #0f4c75; /* Azul petróleo */
+            --cor-destaque-secundaria: #3282b8; /* Azul brilhante */
+            --cor-neon: #bbe1fa; /* Azul quase branco para brilho */
+            --cor-borda: #64feda; /* Ciano-verde neon */
+        }
+
+        body {
+            font-family: 'Share Tech Mono', monospace; /* Fonte tech/monospace */
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto-principal);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden; /* Evita rolagem horizontal */
+        }
+
+        /* Animação de fundo sutil (opcional) */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0,255,255,0.05), rgba(255,0,255,0.05));
+            background-size: 200% 200%;
+            animation: gradientAnim 15s ease infinite;
+            z-index: -1; /* Fica atrás do conteúdo */
+        }
+
+        @keyframes gradientAnim {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            background-color: var(--cor-destaque-primaria);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--cor-borda);
+            box-shadow: 0 0 15px var(--cor-borda);
+        }
+
+        header h1 {
+            font-family: 'Orbitron', sans-serif; /* Fonte futurista para o título */
+            color: var(--cor-neon);
+            text-shadow: 0 0 10px var(--cor-neon), 0 0 20px var(--cor-neon);
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 3px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: var(--cor-neon);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 8px 15px;
+            border: 1px solid var(--cor-borda);
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 5px var(--cor-neon);
+        }
+
+        nav ul li a:hover {
+            background-color: var(--cor-neon);
+            color: var(--cor-fundo);
+            box-shadow: 0 0 15px var(--cor-neon), 0 0 25px var(--cor-neon);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            flex-grow: 1; /* Faz o container ocupar o espaço restante */
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: rgba(30, 30, 47, 0.8); /* Fundo com transparência */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), inset 0 0 10px var(--cor-destaque-secundaria);
+            border: 1px solid var(--cor-destaque-secundaria);
+            backdrop-filter: blur(5px); /* Efeito de vidro fosco */
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-left: 3px solid var(--cor-borda);
+            background-color: rgba(40, 40, 60, 0.7);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 20px var(--cor-borda);
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--cor-neon);
+            text-shadow: 0 0 8px var(--cor-neon);
+            border-bottom: 2px dashed var(--cor-destaque-secundaria);
+            padding-bottom: 10px;
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+
+        p, ul, ol {
+            color: var(--cor-texto-principal);
+        }
+
+        ul li::before {
+            content: '• ';
+            color: var(--cor-borda);
+            font-weight: bold;
+        }
+
+        .code-block {
+            background-color: #2b2b2b;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.9em;
+            border: 1px solid var(--cor-destaque-secundaria);
+            margin-top: 15px;
+        }
+        
+        footer {
+            background-color: var(--cor-destaque-primaria);
+            color: var(--cor-neon);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 2px solid var(--cor-borda);
+            box-shadow: 0 0 15px var(--cor-borda);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>[CYBERNETIC.INTERFACE]</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">INICIAR_SESSÃO</a></li>
+                <li><a href="#about">SOBRE_SISTEMA</a></li>
+                <li><a href="#data">ACESSAR_DADOS</a></li>
+                <li><a href="#contact">CONTATO_UNIDADE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <section id="home">
+            <h2>&gt; BEM-VINDO, USUÁRIO</h2>
+            <p>Esta é a interface principal. Explore os módulos e acesse informações cruciais para sua missão. Os dados estão sendo processados em tempo real.</p>
+            <div class="code-block">
+                <code>
+                    &gt;&gt; Inserindo credenciais de acesso...<br>
+                    &gt;&gt; Autenticação biométrica iniciada...<br>
+                    &gt;&gt; Acesso concedido. Bem-vindo ao Sistema Central.<br>
+                </code>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>&gt; ARQUITETURA DO SISTEMA</h2>
+            <p>Nossa plataforma foi projetada com a mais avançada tecnologia para oferecer desempenho e segurança inigualáveis. Cada componente é otimizado para a eficiência máxima.</p>
+            <ul>
+                <li>Módulo de Processamento Neural</li>
+                <li>Subsistema de Gerenciamento de Energia</li>
+                <li>Interface Holográfica Remota</li>
+            </ul>
+        </section>
+
+        <section id="data">
+            <h2>&gt; RELATÓRIOS DE DADOS</h2>
+            <p>Visualize os relatórios mais recentes e as análises preditivas. Compreenda os padrões e otimize suas estratégias operacionais.</p>
+            <p><code>[DADOS_CRÍTICOS_DISPONÍVEIS]</code></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>[PROTOCOLOS DE COMUNICAÇÃO ATIVOS] &copy; 2077 Projeto CyberFuturo</p>
+    </footer>
+
+</body>
+</html>
+
 
 
